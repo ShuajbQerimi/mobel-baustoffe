@@ -240,17 +240,54 @@ body {
                 flex-direction: column;
                 justify-content: center;
 
-                .photo {
-                    width: 230px;
-                    transition: 0.3s all ease-in-out;
+                .img__wrap {
+                    position: relative;
+                    
+                    width: 218px;
+                    height: 285px;
 
-                    img {
+                    .photo {
                         width: 230px;
+                        transition: 0.3s all ease-in-out;
+
+                        img {
+                            width: 230px;
+                        }
+
+                        &:hover {
+                            color: #CDAB34;
+                            opacity: 0.7;
+                        }
+                    }
+
+                    .img__description {
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        background: rgba(0, 0, 0, 0.4);
+                        color: #fff;
+                        visibility: hidden;
+                        opacity: 0;
+                        border-radius: 21px;
+                        /* transition effect. not necessary */
+                        transition: opacity .2s, visibility .2s;
+                        text-align: center;
+                        padding-top: 140px;
+                        font-weight: 600;
+                        line-height: 10px;
+                        font-size: 18px;
+
                     }
 
                     &:hover {
-                        color: #CDAB34;
-                        opacity: 0.7;
+                        .img__description {
+                            visibility: visible;
+                            opacity: 1;
+                        }
+
+
                     }
                 }
 
@@ -438,8 +475,9 @@ body {
                             line-height: normal;
                             letter-spacing: 1.6px;
                             transition: 0.2s all ease-in-out;
-                            &:hover{
-                                color:#CDAB34;
+
+                            &:hover {
+                                color: #CDAB34;
                             }
                         }
                     }
@@ -461,6 +499,7 @@ body {
                 justify-content: end;
                 text-align: end;
                 padding-bottom: 20px;
+
                 a {
                     img {
                         width: 20px;
@@ -468,7 +507,7 @@ body {
                     }
                 }
             }
-            
+
         }
 
     }
