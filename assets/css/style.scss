@@ -2,520 +2,1058 @@
     font-family: 'Saira Condensed', sans-serif;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+}
+html{
+    scroll-behavior: smooth;
 }
 
-body {
-    background-color: rgb(238, 238, 238);
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Saira Condensed', sans-serif;
+@media only screen and (max-width: 768px) {
+    body {
+        background-color: rgb(238, 238, 238);
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Saira Condensed', sans-serif;
+        scroll-behavior: smooth;
 
-    a {
-        text-decoration: none;
-        color: black;
-    }
+        a {
+            text-decoration: none;
+            color: black;
+        }
 
-    .firstsection {
-        background-image: url(../img/firstsection.png);
-        background-size: 100%;
-        background-repeat: no-repeat;
+        .firstsection {
+            background-image: url(../img/firstsection.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
 
-        .nav {
-            display: flex;
-            flex-direction: row;
-            width: 80%;
-            margin: 0 auto;
-            justify-content: space-between;
-            padding-bottom: 20px;
+            .nav {
+                display: flex;
+                flex-direction: row;
+                width: 80%;
+                margin: 0 auto;
+                justify-content: center;
+                padding-bottom: 20px;
+                text-align: center;
 
-            .left {
-                color: #000;
-                font-family: Saira Condensed;
-                font-size: 32px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: normal;
-                font-family: 'Inter';
-                margin-top: 15px;
-
-                span {
-                    color: #CDAB34;
-                    font-family: Inter;
+                .left {
+                    color: #000;
+                    font-family: Saira Condensed;
                     font-size: 32px;
                     font-style: normal;
                     font-weight: 700;
                     line-height: normal;
-                }
-            }
-
-            .right {
-                display: flex;
-                flex-direction: row;
-
-                a {
-                    color: #FFF;
-                    font-family: Saira Condensed;
-                    font-size: 22px;
-                    font-style: normal;
-                    font-weight: 700;
-                    line-height: normal;
-                    letter-spacing: 2px;
-                    margin: 15px 20px 0px 20px;
-                    transition: 0.2s all ease-in-out;
-                    margin-top: 25px;
-
-                    &:hover {
-                        color: #CDAB34;
-                    }
-                }
-
-                #contactus {
-                    color: #FFF;
-                    font-family: Saira Condensed;
-                    font-size: 22px;
-                    font-style: normal;
-                    font-weight: 800;
-                    line-height: normal;
-                    letter-spacing: 2px;
-                    margin: 20px 20px 0px 20px;
-                    transition: 0.2s all ease-in-out;
-                    border: 2px solid white;
-                    border-radius: 2px;
-                    padding: 5px 10px 0px 10px;
-
-                    &:hover {
-                        color: #CDAB34;
-                        border: 2px solid #CDAB34;
-                        border-radius: 10px;
-                    }
-
-                }
-            }
-        }
-
-        .container {
-            p {
-                color: #FFF;
-                text-align: center;
-                font-family: Saira Condensed;
-                font-size: 48px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: normal;
-                letter-spacing: 4.8px;
-
-                width: 600px;
-                margin: 0 auto;
-                margin-top: 300px;
-                padding-bottom: 300px;
-            }
-        }
-    }
-
-
-
-    .textline {
-        p {
-            font-size: 32px;
-            font-weight: 500;
-            color: #071E6D;
-            text-align: center;
-            margin-top: 50px;
-        }
-
-        img {
-            margin-top: 50px;
-            width: 100%;
-            height: 2px;
-        }
-    }
-
-    .secondsection {
-        width: 70%;
-        margin: 0 auto;
-        margin-top: 50px;
-
-        .container {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-
-            .parts {
-                .box {
-                    border-radius: 10px;
-
-                    background: #FFF;
-                    box-shadow: 0px 5px 4px 5px rgba(0, 0, 0, 0.27);
-                    width: 247px;
-
-                    img {
-                        width: 247px;
-
-                    }
-
-                    #topmrg {
-                        margin-bottom: 50px;
-                    }
-
-                    .downtext {
-                        display: flex;
-                        flex-direction: column;
-                        margin-top: -30px;
-
-                        .texts {
-                            display: flex;
-                            flex-direction: row;
-
-                            padding: 15px;
-
-
-
-                            img {
-                                width: 30px;
-                                height: 30px;
-                                margin-right: 10px;
-                            }
-
-                            p {
-                                color: #000;
-                                font-family: Saira Condensed;
-                                font-size: 16px;
-                                font-style: normal;
-                                font-weight: 400;
-                                line-height: normal;
-                                letter-spacing: 1.6px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    .thirdsection {
-        width: 80%;
-        margin: 0 auto;
-        margin-top: 50px;
-
-        img {
-            width: 100%;
-            border-radius: 15px;
-        }
-    }
-
-    .whatweoffer {
-        width: 50%;
-        margin: 0 auto;
-        text-align: center;
-        margin-top: 50px;
-
-        p {
-            color: black;
-            font-family: Saira Condensed;
-            font-size: 64px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: normal;
-            letter-spacing: 6.4px;
-            padding: 15px 30px 0px 30px;
-            background-color: #CDAB34;
-        }
-    }
-
-    .offers {
-        width: 80%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        margin-top: 50px;
-
-        .firstpart {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            margin-top: 50px;
-
-            .box {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-
-                .img__wrap {
-                    position: relative;
-                    
-                    width: 218px;
-                    height: 285px;
-
-                    .photo {
-                        width: 230px;
-                        transition: 0.3s all ease-in-out;
-
-                        img {
-                            width: 230px;
-                        }
-
-                        &:hover {
-                            color: #CDAB34;
-                            opacity: 0.7;
-                        }
-                    }
-
-                    .img__description {
-                        position: absolute;
-                        top: 0;
-                        bottom: 0;
-                        left: 0;
-                        right: 0;
-                        background: rgba(0, 0, 0, 0.4);
-                        color: #fff;
-                        visibility: hidden;
-                        opacity: 0;
-                        border-radius: 21px;
-                        /* transition effect. not necessary */
-                        transition: opacity .2s, visibility .2s;
-                        text-align: center;
-                        padding-top: 140px;
-                        font-weight: 600;
-                        line-height: 10px;
-                        font-size: 18px;
-
-                    }
-
-                    &:hover {
-                        .img__description {
-                            visibility: visible;
-                            opacity: 1;
-                        }
-
-
-                    }
-                }
-
-                .text {
+                    font-family: 'Inter';
                     margin-top: 15px;
-                    width: 200px;
-                    border-radius: 10px;
-                    background: #CDAB34;
-                    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.50);
-                    color: black;
-                    font-family: Saira Condensed;
-                    font-size: 24px;
-                    font-style: normal;
-                    font-weight: 600;
-                    line-height: normal;
-                    letter-spacing: 2.4px;
-                    text-align: center;
-                    margin-left: 10px;
-                    transition: 0.3s all ease-in-out;
 
-                    &:hover {
-                        opacity: 0.7;
-                    }
-                }
-            }
-
-        }
-    }
-
-    .fourthsection {
-        width: 80%;
-        margin: 0 auto;
-        margin-top: 50px;
-
-        img {
-            width: 100%;
-        }
-    }
-
-    .located {
-        background-image: url(../img/located.png);
-        background-size: 100% 100%;
-        margin-top: 50px;
-
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: row;
-            padding: 100px;
-
-            .left {
-                flex: 2;
-
-                .up {
-                    p {
+                    span {
                         color: #CDAB34;
-                        font-family: Saira Condensed;
-                        font-size: 64px;
+                        font-family: Inter;
+                        font-size: 32px;
                         font-style: normal;
                         font-weight: 700;
                         line-height: normal;
-                        letter-spacing: 6.4px;
-                        margin-top: 50px;
                     }
                 }
 
-                .down {
-                    p {
+                .right {
+                    display: flex;
+                    flex-direction: row;
+                    display: none;
+
+                    a {
                         color: #FFF;
                         font-family: Saira Condensed;
-                        font-size: 24px;
+                        font-size: 22px;
                         font-style: normal;
-                        font-weight: 400;
+                        font-weight: 700;
                         line-height: normal;
-                        letter-spacing: 2.4px;
+                        letter-spacing: 2px;
+                        margin: 15px 20px 0px 20px;
+                        transition: 0.2s all ease-in-out;
+                        margin-top: 25px;
+
+                        &:hover {
+                            color: #CDAB34;
+                        }
+                    }
+
+                    #contactus {
+                        color: #FFF;
+                        font-family: Saira Condensed;
+                        font-size: 22px;
+                        font-style: normal;
+                        font-weight: 800;
+                        line-height: normal;
+                        letter-spacing: 2px;
+                        margin: 20px 20px 0px 20px;
+                        transition: 0.2s all ease-in-out;
+                        border: 2px solid white;
+                        border-radius: 2px;
+                        padding: 5px 10px 0px 10px;
+
+                        &:hover {
+                            color: #CDAB34;
+                            border: 2px solid #CDAB34;
+                            border-radius: 10px;
+                        }
+
                     }
                 }
             }
 
-            .right {
-                flex: 1;
+            .container {
+                p {
+                    color: #FFF;
+                    text-align: center;
+                    font-family: Saira Condensed;
+                    font-size: 28px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 4.8px;
 
-                img {
-                    width: 130%;
+                    max-width: 390px;
+                    margin: 0 auto;
+                    margin-top: 30px;
+                    padding-bottom: 30px;
                 }
             }
         }
-    }
 
-    footer {
-        background-image: url(../img/footerphoto.png);
-        background-size: 100%;
-        padding-top: 150px;
-        margin-top: 50px;
 
-        .container {
+
+        .textline {
+            p {
+                font-size: 22px;
+                font-weight: 500;
+                color: #071E6D;
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            img {
+                margin-top: 20px;
+                width: 100%;
+                height: 2px;
+            }
+        }
+
+        .secondsection {
+            width: 70%;
+            margin: 0 auto;
+            margin-top: 0px;
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+
+                .parts {
+                    .box {
+                        border-radius: 10px;
+                        margin-top: 50px;
+
+                        background: #FFF;
+                        box-shadow: 0px 5px 4px 5px rgba(0, 0, 0, 0.27);
+                        width: 247px;
+
+                        img {
+                            width: 247px;
+
+                        }
+
+                        #topmrg {
+                            margin-bottom: 50px;
+                        }
+
+                        .downtext {
+                            display: flex;
+                            flex-direction: column;
+                            margin-top: -30px;
+
+                            .texts {
+                                display: flex;
+                                flex-direction: row;
+
+                                padding: 15px;
+
+
+
+                                img {
+                                    width: 30px;
+                                    height: 30px;
+                                    margin-right: 10px;
+                                }
+
+                                p {
+                                    color: #000;
+                                    font-family: Saira Condensed;
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: normal;
+                                    letter-spacing: 1.6px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .thirdsection {
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 50px;
+
+            img {
+                width: 100%;
+                border-radius: 15px;
+            }
+        }
+
+        .whatweoffer {
             width: 80%;
             margin: 0 auto;
-            background: rgba(217, 217, 217, 0.40);
-            padding: 40px;
+            text-align: center;
+            margin-top: 50px;
 
-            .uppart {
+            p {
+                color: black;
+                font-family: Saira Condensed;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                letter-spacing: 6.4px;
+                padding: 0px 30px 0px 30px;
+                background-color: #CDAB34;
+            }
+        }
+
+        .offers {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            margin-top: 0px;
+
+            .firstpart {
                 display: flex;
-                flex-direction: row;
-                justify-content: space-between;
+                flex-direction: column;
+                justify-content: center;
+                margin-top: 50px;
+                text-align: center;
+
+                .box {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: center;
+                    align-items: center;
+                    margin-bottom: 50px;
+
+                    .img__wrap {
+                        position: relative;
+
+                        width: 218px;
+                        height: 285px;
+
+                        .photo {
+                            width: 230px;
+                            transition: 0.3s all ease-in-out;
+
+                            img {
+                                width: 230px;
+                            }
+
+                            &:hover {
+                                color: #CDAB34;
+                                opacity: 0.7;
+                            }
+                        }
+
+                        .img__description {
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            background: rgba(0, 0, 0, 0.4);
+                            color: #fff;
+                            visibility: hidden;
+                            opacity: 0;
+                            border-radius: 21px;
+                            /* transition effect. not necessary */
+                            transition: opacity .2s, visibility .2s;
+                            text-align: center;
+                            padding-top: 140px;
+                            font-weight: 600;
+                            line-height: 10px;
+                            font-size: 18px;
+
+                        }
+
+                        &:hover {
+                            .img__description {
+                                visibility: visible;
+                                opacity: 1;
+                            }
+
+
+                        }
+                    }
+
+                    .text {
+                        margin-top: 15px;
+                        width: 200px;
+                        border-radius: 10px;
+                        background: #CDAB34;
+                        box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.50);
+                        color: black;
+                        font-family: Saira Condensed;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        letter-spacing: 2.4px;
+                        text-align: center;
+                        margin-left: 10px;
+                        transition: 0.3s all ease-in-out;
+
+                        &:hover {
+                            opacity: 0.7;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .fourthsection {
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 30px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .located {
+            background-image: url(../img/located.png);
+            background-size: 100% 100%;
+            margin-top: 30px;
+
+            .container {
+                width: 90%;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                padding: 0px;
 
                 .left {
-                    .title {
+                    flex: 1;
+
+                    .up {
                         p {
-                            color: #000;
-                            font-family: Inter;
-                            font-size: 45px;
+                            color: #CDAB34;
+                            font-family: Saira Condensed;
+                            font-size: 22px;
                             font-style: normal;
                             font-weight: 700;
                             line-height: normal;
+                            letter-spacing: 6.4px;
+                            margin-top: 50px;
+                        }
+                    }
 
-                            span {
-                                color: #CDAB34;
+                    .down {
+                        p {
+                            color: #FFF;
+                            font-family: Saira Condensed;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            letter-spacing: 2.4px;
+                        }
+                    }
+                }
+
+                .right {
+                    flex: 1;
+
+                    img {
+                        width: 90%;
+                    }
+                }
+            }
+        }
+
+        footer {
+            padding-top: 50px;
+            margin-top: 0px;
+
+            .container {
+                width: 90%;
+                margin: 0 auto;
+                background: rgba(0, 0, 0, 0.4);
+                padding: 10px;
+
+                .uppart {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: center;
+                    align-items: center;
+
+                    .left {
+                        .title {
+                            p {
+                                color: #000;
                                 font-family: Inter;
                                 font-size: 45px;
                                 font-style: normal;
                                 font-weight: 700;
                                 line-height: normal;
+
+                                span {
+                                    color: #CDAB34;
+                                    font-family: Inter;
+                                    font-size: 45px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: normal;
+                                }
                             }
+                        }
+
+                        .text {
+                            max-width: 415px;
+                            margin-top: 53px;
+
+                            p {
+                                color: #FFF;
+                                font-family: Saira Condensed;
+                                font-size: 15px;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: normal;
+                                letter-spacing: 1.5px;
+                            }
+                        }
+
+                    }
+
+                    .right {
+                        justify-content: center;
+                        text-align: center;
+                        align-items: center;
+
+                        .ups {
+                            margin-top: 50px;
+
+                            a {
+                                color: white;
+                                // color: #CDAB34;
+                                font-family: Saira Condensed;
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: normal;
+                                letter-spacing: 2.4px;
+                                border: 3px solid white;
+                                padding: 10px 10px 10px 10px;
+                                transition: 0.2s all ease-in-out;
+
+                                &:hover {
+                                    color: #CDAB34;
+                                    border: 3px solid #CDAB34;
+                                }
+                            }
+                        }
+
+                        .downs {
+                            display: flex;
+                            flex-direction: column;
+                            margin-top: 20px;
+
+                            a {
+                                margin: 2px 0px;
+                                color: #FFF;
+                                font-family: Saira Condensed;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: normal;
+                                letter-spacing: 1.6px;
+                                transition: 0.2s all ease-in-out;
+
+                                &:hover {
+                                    color: #CDAB34;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            .down {
+                width: 90%;
+                margin: 0 auto;
+
+                img {
+                    width: 100%;
+                    margin: 0 auto;
+                }
+
+                .socials {
+                    justify-content: center;
+                    text-align: center;
+                    align-items: center;
+                    padding-bottom: 20px;
+                    background: rgba(0, 0, 0, 0.4);
+
+
+                    a {
+                        img {
+                            width: 25px;
+                            margin: 20px 20px -10px 20px;
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+
+
+
+
+
+
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    body {
+        background-color: rgb(238, 238, 238);
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Saira Condensed', sans-serif;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .firstsection {
+            background-image: url(../img/firstsection.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+
+            .nav {
+                display: flex;
+                flex-direction: row;
+                width: 80%;
+                margin: 0 auto;
+                justify-content: space-between;
+                padding-bottom: 20px;
+
+                .left {
+                    color: #000;
+                    font-family: Saira Condensed;
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    font-family: 'Inter';
+                    margin-top: 15px;
+
+                    span {
+                        color: #CDAB34;
+                        font-family: Inter;
+                        font-size: 32px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+                }
+
+                .right {
+                    display: flex;
+                    flex-direction: row;
+
+                    a {
+                        color: #FFF;
+                        font-family: Saira Condensed;
+                        font-size: 22px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        letter-spacing: 2px;
+                        margin: 15px 20px 0px 20px;
+                        transition: 0.2s all ease-in-out;
+                        margin-top: 25px;
+
+                        &:hover {
+                            color: #CDAB34;
+                        }
+                    }
+
+                    #contactus {
+                        color: #FFF;
+                        font-family: Saira Condensed;
+                        font-size: 22px;
+                        font-style: normal;
+                        font-weight: 800;
+                        line-height: normal;
+                        letter-spacing: 2px;
+                        margin: 20px 20px 0px 20px;
+                        transition: 0.2s all ease-in-out;
+                        border: 2px solid white;
+                        border-radius: 2px;
+                        padding: 5px 10px 0px 10px;
+
+                        &:hover {
+                            color: #CDAB34;
+                            border: 2px solid #CDAB34;
+                            border-radius: 10px;
+                        }
+
+                    }
+                }
+            }
+
+            .container {
+                p {
+                    color: #FFF;
+                    text-align: center;
+                    font-family: Saira Condensed;
+                    font-size: 48px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 4.8px;
+
+                    width: 600px;
+                    margin: 0 auto;
+                    margin-top: 300px;
+                    padding-bottom: 300px;
+                }
+            }
+        }
+
+
+
+        .textline {
+            p {
+                font-size: 32px;
+                font-weight: 500;
+                color: #071E6D;
+                text-align: center;
+                margin-top: 50px;
+            }
+
+            img {
+                margin-top: 50px;
+                width: 100%;
+                height: 2px;
+            }
+        }
+
+        .secondsection {
+            width: 70%;
+            margin: 0 auto;
+            margin-top: 50px;
+
+            .container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .parts {
+                    .box {
+                        border-radius: 10px;
+
+                        background: #FFF;
+                        box-shadow: 0px 5px 4px 5px rgba(0, 0, 0, 0.27);
+                        width: 247px;
+
+                        img {
+                            width: 247px;
+
+                        }
+
+                        #topmrg {
+                            margin-bottom: 50px;
+                        }
+
+                        .downtext {
+                            display: flex;
+                            flex-direction: column;
+                            margin-top: -30px;
+
+                            .texts {
+                                display: flex;
+                                flex-direction: row;
+
+                                padding: 15px;
+
+
+
+                                img {
+                                    width: 30px;
+                                    height: 30px;
+                                    margin-right: 10px;
+                                }
+
+                                p {
+                                    color: #000;
+                                    font-family: Saira Condensed;
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: normal;
+                                    letter-spacing: 1.6px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .thirdsection {
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 50px;
+
+            img {
+                width: 100%;
+                border-radius: 15px;
+            }
+        }
+
+        .whatweoffer {
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 50px;
+
+            p {
+                color: black;
+                font-family: Saira Condensed;
+                font-size: 64px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                letter-spacing: 6.4px;
+                padding: 15px 30px 0px 30px;
+                background-color: #CDAB34;
+            }
+        }
+
+        .offers {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+
+            .firstpart {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-top: 50px;
+
+                .box {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    .img__wrap {
+                        position: relative;
+
+                        width: 218px;
+                        height: 285px;
+
+                        .photo {
+                            width: 230px;
+                            transition: 0.3s all ease-in-out;
+
+                            img {
+                                width: 230px;
+                            }
+
+                            &:hover {
+                                color: #CDAB34;
+                                opacity: 0.7;
+                            }
+                        }
+
+                        .img__description {
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            background: rgba(0, 0, 0, 0.4);
+                            color: #fff;
+                            visibility: hidden;
+                            opacity: 0;
+                            border-radius: 21px;
+                            /* transition effect. not necessary */
+                            transition: opacity .2s, visibility .2s;
+                            text-align: center;
+                            padding-top: 140px;
+                            font-weight: 600;
+                            line-height: 10px;
+                            font-size: 18px;
+
+                        }
+
+                        &:hover {
+                            .img__description {
+                                visibility: visible;
+                                opacity: 1;
+                            }
+
+
                         }
                     }
 
                     .text {
-                        max-width: 415px;
-                        margin-top: 53px;
+                        margin-top: 15px;
+                        width: 200px;
+                        border-radius: 10px;
+                        background: #CDAB34;
+                        box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.50);
+                        color: black;
+                        font-family: Saira Condensed;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        letter-spacing: 2.4px;
+                        text-align: center;
+                        margin-left: 10px;
+                        transition: 0.3s all ease-in-out;
 
-                        p {
-                            color: #FFF;
-                            font-family: Saira Condensed;
-                            font-size: 15px;
-                            font-style: normal;
-                            font-weight: 600;
-                            line-height: normal;
-                            letter-spacing: 1.5px;
-                        }
-                    }
-
-                }
-
-                .right {
-                    justify-content: end;
-                    text-align: end;
-
-                    .ups {
-                        margin-top: 20px;
-
-                        a {
-                            color: white;
-                            // color: #CDAB34;
-                            font-family: Saira Condensed;
-                            font-size: 24px;
-                            font-style: normal;
-                            font-weight: 700;
-                            line-height: normal;
-                            letter-spacing: 2.4px;
-                            border: 3px solid white;
-                            padding: 10px 10px 10px 10px;
-                            transition: 0.2s all ease-in-out;
-
-                            &:hover {
-                                color: #CDAB34;
-                                border: 3px solid #CDAB34;
-                            }
-                        }
-                    }
-
-                    .downs {
-                        display: flex;
-                        flex-direction: column;
-                        margin-top: 50px;
-
-                        a {
-                            margin: 2px 0px;
-                            color: #FFF;
-                            font-family: Saira Condensed;
-                            font-size: 16px;
-                            font-style: normal;
-                            font-weight: 600;
-                            line-height: normal;
-                            letter-spacing: 1.6px;
-                            transition: 0.2s all ease-in-out;
-
-                            &:hover {
-                                color: #CDAB34;
-                            }
+                        &:hover {
+                            opacity: 0.7;
                         }
                     }
                 }
+
             }
-
         }
 
-        .down {
+        .fourthsection {
             width: 80%;
             margin: 0 auto;
+            margin-top: 50px;
 
             img {
                 width: 100%;
-                margin: 0 auto;
             }
+        }
 
-            .socials {
-                justify-content: end;
-                text-align: end;
-                padding-bottom: 20px;
+        .located {
+            background-image: url(../img/located.png);
+            background-size: 100% 100%;
+            margin-top: 50px;
 
-                a {
-                    img {
-                        width: 20px;
-                        margin: 0px 10px;
+            .container {
+                width: 80%;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: row;
+                padding: 100px;
+
+                .left {
+                    flex: 2;
+
+                    .up {
+                        p {
+                            color: #CDAB34;
+                            font-family: Saira Condensed;
+                            font-size: 64px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                            letter-spacing: 6.4px;
+                            margin-top: 50px;
+                        }
+                    }
+
+                    .down {
+                        p {
+                            color: #FFF;
+                            font-family: Saira Condensed;
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            letter-spacing: 2.4px;
+                        }
                     }
                 }
+
+                .right {
+                    flex: 1;
+
+                    img {
+                        width: 130%;
+                    }
+                }
+            }
+        }
+
+        footer {
+            background-image: url(../img/footerphoto.png);
+            background-size: 100%;
+            padding-top: 150px;
+            margin-top: 50px;
+
+            .container {
+                width: 80%;
+                margin: 0 auto;
+                background: rgba(217, 217, 217, 0.40);
+                padding: 40px;
+
+                .uppart {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    .left {
+                        .title {
+                            p {
+                                color: #000;
+                                font-family: Inter;
+                                font-size: 45px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: normal;
+
+                                span {
+                                    color: #CDAB34;
+                                    font-family: Inter;
+                                    font-size: 45px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: normal;
+                                }
+                            }
+                        }
+
+                        .text {
+                            max-width: 415px;
+                            margin-top: 53px;
+
+                            p {
+                                color: #FFF;
+                                font-family: Saira Condensed;
+                                font-size: 15px;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: normal;
+                                letter-spacing: 1.5px;
+                            }
+                        }
+
+                    }
+
+                    .right {
+                        justify-content: end;
+                        text-align: end;
+
+                        .ups {
+                            margin-top: 20px;
+
+                            a {
+                                color: white;
+                                // color: #CDAB34;
+                                font-family: Saira Condensed;
+                                font-size: 24px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: normal;
+                                letter-spacing: 2.4px;
+                                border: 3px solid white;
+                                padding: 10px 10px 10px 10px;
+                                transition: 0.2s all ease-in-out;
+
+                                &:hover {
+                                    color: #CDAB34;
+                                    border: 3px solid #CDAB34;
+                                }
+                            }
+                        }
+
+                        .downs {
+                            display: flex;
+                            flex-direction: column;
+                            margin-top: 50px;
+
+                            a {
+                                margin: 2px 0px;
+                                color: #FFF;
+                                font-family: Saira Condensed;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: normal;
+                                letter-spacing: 1.6px;
+                                transition: 0.2s all ease-in-out;
+
+                                &:hover {
+                                    color: #CDAB34;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            .down {
+                width: 80%;
+                margin: 0 auto;
+
+                img {
+                    width: 100%;
+                    margin: 0 auto;
+                }
+
+                .socials {
+                    justify-content: end;
+                    text-align: end;
+                    padding-bottom: 20px;
+
+                    a {
+                        img {
+                            width: 20px;
+                            margin: 0px 10px;
+                        }
+                    }
+                }
+
             }
 
         }
 
+
+
+
+
+
+
     }
-
-
-
-
-
-
-
 }

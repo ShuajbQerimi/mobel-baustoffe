@@ -4,128 +4,279 @@
   padding: 0;
 }
 
-body {
-  background-color: rgb(238, 238, 238);
-  margin: 0px;
-  padding: 0px;
-  font-family: "Saira Condensed", sans-serif;
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: rgb(238, 238, 238);
+    margin: 0px;
+    padding: 0px;
+    font-family: "Saira Condensed", sans-serif;
+  }
+  body a {
+    text-decoration: none;
+    color: black;
+  }
+  body .container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  body .container .uppart {
+    display: flex;
+    flex-direction: column;
+  }
+  body .container .uppart .left .title {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  body .container .uppart .left .title p {
+    color: #000;
+    font-family: Saira Condensed;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 4px;
+  }
+  body .container .uppart .left .title img {
+    width: 100%;
+    height: 1px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  body .container .uppart .left .text {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  body .container .uppart .left .text p {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+    color: #000;
+    font-family: SF Pro Display;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px;
+    /* 206.25% */
+    width: 100%;
+  }
+  body .container .uppart .left .downbutton {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  body .container .uppart .left .downbutton a {
+    color: #FFF;
+    font-family: Saira Condensed;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1px;
+    background: #CDAB34;
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.3s all ease-in-out;
+  }
+  body .container .uppart .left .downbutton a:hover {
+    background: #CDAB34;
+    color: black;
+  }
+  body .container .uppart .right {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  body .container .uppart .right img {
+    width: 90%;
+  }
+  body .container .downpart {
+    margin-top: 40px;
+  }
+  body .container .downpart .boxs1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  body .container .downpart .boxs1 #photo1 {
+    width: 240px;
+    margin-top: 40px;
+  }
+  body .container .downpart .boxs1 #photo2 {
+    width: 240px;
+    margin-top: 40px;
+  }
+  body .container .downpart .boxs1 #photo3 {
+    width: 240px;
+    margin-top: 40px;
+  }
+  body .container .downpart .boxs2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  body .container .downpart .boxs2 #photo4 {
+    width: 240px;
+    margin-top: 40px;
+  }
+  body .container .downpart .boxs2 #photo5 {
+    width: 240px;
+    margin-top: 40px;
+  }
+  body .container .downpart .boxs3 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  body .container .downpart .boxs3 #photo6 {
+    width: 240px;
+    margin-top: 40px;
+  }
+  body .container .downpart .boxs3 #photo7 {
+    width: 240px;
+    margin-top: 40px;
+  }
+  body .container .downpart .boxs3 #photo8 {
+    width: 240px;
+    margin-top: 40px;
+  }
 }
-body a {
-  text-decoration: none;
-  color: black;
-}
-body .container {
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 50px;
-}
-body .container .uppart {
-  display: flex;
-  flex-direction: row;
-}
-body .container .uppart .left {
-  flex: 1;
-}
-body .container .uppart .left .title p {
-  color: #000;
-  font-family: Saira Condensed;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: 4px;
-}
-body .container .uppart .left .title img {
-  width: 100%;
-  height: 1px;
-}
-body .container .uppart .left .text p {
-  margin-top: 30px;
-  color: #000;
-  font-family: SF Pro Display;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 33px;
-  /* 206.25% */
-  width: 90%;
-}
-body .container .uppart .left .downbutton {
-  margin-top: 30px;
-}
-body .container .uppart .left .downbutton a {
-  color: #FFF;
-  font-family: Saira Condensed;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: 1px;
-  background: #CDAB34;
-  border-radius: 5px;
-  padding: 10px;
-  transition: 0.3s all ease-in-out;
-}
-body .container .uppart .left .downbutton a:hover {
-  background: #CDAB34;
-  color: black;
-}
-body .container .uppart .right {
-  flex: 1;
-}
-body .container .uppart .right img {
-  width: 100%;
-}
-body .container .downpart {
-  margin-top: 40px;
-}
-body .container .downpart .boxs1 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-body .container .downpart .boxs1 #photo1 {
-  width: 335px;
-  margin-top: 40px;
-}
-body .container .downpart .boxs1 #photo2 {
-  width: 335px;
-  margin-top: 40px;
-}
-body .container .downpart .boxs1 #photo3 {
-  width: 335px;
-  margin-top: 40px;
-}
-body .container .downpart .boxs2 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-body .container .downpart .boxs2 #photo4 {
-  width: 520px;
-  margin-top: 40px;
-}
-body .container .downpart .boxs2 #photo5 {
-  width: 520px;
-  margin-top: 40px;
-}
-body .container .downpart .boxs3 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-body .container .downpart .boxs3 #photo6 {
-  width: 330px;
-  margin-top: 40px;
-}
-body .container .downpart .boxs3 #photo7 {
-  width: 400px;
-  margin-top: 40px;
-}
-body .container .downpart .boxs3 #photo8 {
-  width: 203px;
-  margin-top: 40px;
+@media only screen and (min-width: 1280px) {
+  body {
+    background-color: rgb(238, 238, 238);
+    margin: 0px;
+    padding: 0px;
+    font-family: "Saira Condensed", sans-serif;
+  }
+  body a {
+    text-decoration: none;
+    color: black;
+  }
+  body .container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  body .container .uppart {
+    display: flex;
+    flex-direction: row;
+  }
+  body .container .uppart .left {
+    flex: 1;
+  }
+  body .container .uppart .left .title p {
+    color: #000;
+    font-family: Saira Condensed;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 4px;
+  }
+  body .container .uppart .left .title img {
+    width: 100%;
+    height: 1px;
+  }
+  body .container .uppart .left .text p {
+    margin-top: 30px;
+    color: #000;
+    font-family: SF Pro Display;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px;
+    /* 206.25% */
+    width: 90%;
+  }
+  body .container .uppart .left .downbutton {
+    margin-top: 30px;
+  }
+  body .container .uppart .left .downbutton a {
+    color: #FFF;
+    font-family: Saira Condensed;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1px;
+    background: #CDAB34;
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.3s all ease-in-out;
+  }
+  body .container .uppart .left .downbutton a:hover {
+    background: #CDAB34;
+    color: black;
+  }
+  body .container .uppart .right {
+    flex: 1;
+  }
+  body .container .uppart .right img {
+    width: 100%;
+  }
+  body .container .downpart {
+    margin-top: 40px;
+  }
+  body .container .downpart .boxs1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  body .container .downpart .boxs1 #photo1 {
+    width: 335px;
+    margin-top: 40px;
+  }
+  body .container .downpart .boxs1 #photo2 {
+    width: 335px;
+    margin-top: 40px;
+  }
+  body .container .downpart .boxs1 #photo3 {
+    width: 335px;
+    margin-top: 40px;
+  }
+  body .container .downpart .boxs2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  body .container .downpart .boxs2 #photo4 {
+    width: 520px;
+    margin-top: 40px;
+  }
+  body .container .downpart .boxs2 #photo5 {
+    width: 520px;
+    margin-top: 40px;
+  }
+  body .container .downpart .boxs3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  body .container .downpart .boxs3 #photo6 {
+    width: 330px;
+    margin-top: 40px;
+  }
+  body .container .downpart .boxs3 #photo7 {
+    width: 400px;
+    margin-top: 40px;
+  }
+  body .container .downpart .boxs3 #photo8 {
+    width: 203px;
+    margin-top: 40px;
+  }
 }/*# sourceMappingURL=style.css.map */
