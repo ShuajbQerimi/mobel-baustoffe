@@ -520,7 +520,7 @@ html {
     font-weight: 700;
     line-height: normal;
     letter-spacing: 4.8px;
-    width: 600px;
+    width: 800px;
     margin: 0 auto;
     margin-top: 300px;
     padding-bottom: 300px;
@@ -558,6 +558,9 @@ html {
   }
   body .secondsection .container .parts .box #topmrg {
     margin-bottom: 50px;
+  }
+  body .secondsection .container .parts .box #margintopp {
+    margin-top: 20px;
   }
   body .secondsection .container .parts .box .downtext {
     display: flex;
@@ -659,7 +662,7 @@ html {
     text-align: center;
     padding-top: 140px;
     font-weight: 600;
-    line-height: 10px;
+    line-height: 25px;
     font-size: 18px;
   }
   body .offers .firstpart .box .img__wrap:hover .img__description {

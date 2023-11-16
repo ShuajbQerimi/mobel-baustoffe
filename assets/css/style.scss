@@ -641,7 +641,7 @@ html{
                     line-height: normal;
                     letter-spacing: 4.8px;
 
-                    width: 600px;
+                    width: 800px;
                     margin: 0 auto;
                     margin-top: 300px;
                     padding-bottom: 300px;
@@ -693,7 +693,9 @@ html{
                         #topmrg {
                             margin-bottom: 50px;
                         }
-
+                        #margintopp{
+                            margin-top: 20px;
+                        }
                         .downtext {
                             display: flex;
                             flex-direction: column;
@@ -813,7 +815,7 @@ html{
                             text-align: center;
                             padding-top: 140px;
                             font-weight: 600;
-                            line-height: 10px;
+                            line-height: 25px;
                             font-size: 18px;
 
                         }
